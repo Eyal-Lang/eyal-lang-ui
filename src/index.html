@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyalLang - Rule-Based Python DSL</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #555;
+        }
+
+        main {
+            max-width: 850px;
+            margin: auto;
+            padding: 2rem 1rem;
+            background: #fff;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            overflow-x: auto;
+            border-left: 4px solid #ddd;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1rem;
+            background: #007acc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            padding: 2rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🦁 EyalLang</h1>
+        <p>A simple, rule-based DSL that interprets Eyal-style directives to Python.</p>
+        <a class="button" href="https://github.com/Eyal-Lang/eyal-lang" target="_blank">View on GitHub</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>🚀 Quick Start</h2>
+            <pre><code>pip install eyal-lang
+
+python -m eyal_lang --line "say hello world"
+</code></pre>
+        </section>
+
+        <section>
+            <h2>📖 Syntax Examples</h2>
+            <pre><code># Output
+say hello world          → print("hello world")
+
+# Variables
+set name to "Eyal"       → name = "Eyal"
+set x to 5               → x = 5
+set y to x + 10          → y = x + 10
+
+# Math & Greeting
+set a to 10
+set b to 5
+set sum to a + b
+say the sum is sum       → print("the sum is sum")</code></pre>
+        </section>
+
+        <section>
+            <h2>🎯 Features</h2>
+            <ul>
+                <li>✅ No dependencies</li>
+                <li>⚡ Fast, lightweight interpreter</li>
+                <li>🛠 Extensible rule-based engine</li>
+                <li>🐍 CLI & API support</li>
+                <li>🧠 Great error messages</li>
+                <li>🔒 MIT licensed & open source</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>💡 CLI Usage</h2>
+            <pre><code># Run a file
+python -m eyal_lang --file examples/hello.eyal
+
+# Interactive mode
+python -m eyal_lang
+
+# Save output
+python -m eyal_lang --file input.eyal --output out.py
+</code></pre>
+        </section>
+
+        <section>
+            <h2>🧪 Dev & Quality Tools</h2>
+            <pre><code>pip install -e .[dev]
+pre-commit install
+pre-commit run --all-files</code></pre>
+            <p>Uses: <strong>black</strong>, <strong>flake8</strong>, <strong>mypy</strong>, <strong>bandit</strong></p>
+        </section>
+
+        <section>
+            <h2>📦 PyPI</h2>
+            <p>Install via:</p>
+            <pre><code>pip install eyal-lang</code></pre>
+            <p>Or check the <a href="https://pypi.org/project/eyal-lang/" target="_blank">PyPI package →</a></p>
+        </section>
+    </main>
+
+    <footer>
+        Made with 🧠 by the EyalLang Team · MIT License
+    </footer>
+</body>
+
+</html>
